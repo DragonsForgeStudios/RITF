@@ -387,6 +387,7 @@ p {
 
 /* HEADER HERO */
 header {
+    position: relative;
     z-index: 10;
     height: 50vh;
     background-image: url("../static/header/bg.webp");
@@ -398,9 +399,18 @@ header {
 }
 
 header .button-try-now {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
     z-index: 20;
-    width: fit-content;
-    margin: auto auto -20px auto;
+    width: max-content;
+}
+
+header .button-try-now:hover,
+header .button-try-now:focus {
+    transform: translate(-50%, 50%)
+               scale(1.2) !important;
 }
 
 .socials {
