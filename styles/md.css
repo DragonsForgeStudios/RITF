@@ -1,0 +1,30 @@
+@media (width >= 768px) {
+    .title {
+        font-size: 64px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    .introduction {
+        margin-top: 160px;
+    }
+
+    .extra-buttons {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .slider img, .slider video {
+        width: 380px;
+    }
+
+    #characters .slider img {
+        width: 180px;
+    }
+
+    .socials ul a {
+        font-size: 20px;
+    }
+}

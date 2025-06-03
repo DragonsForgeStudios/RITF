@@ -1,0 +1,13 @@
+@media (width >= 1024px) {
+    .title {
+        font-size: 64px;
+    }
+
+    .slider img, .slider video {
+        width: 400px;
+    }
+
+    #characters .slider img {
+        width: 210px;
+    }
+}

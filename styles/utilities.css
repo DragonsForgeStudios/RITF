@@ -1,0 +1,133 @@
+/* TEXT */
+
+.text-primary {
+    color: var(--primary-color);
+}
+
+.text-secondary {
+    color: var(--secondary-color);
+}
+
+.text-tertiary {
+    color: var(--tertiary-color);
+}
+
+p {
+    font-size: 16px;
+    margin: 0;
+}
+
+*:not(.button) > strong {
+    position: relative;
+    font-weight: 500;
+    white-space: nowrap !important;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 100%;
+    padding: 1.5px 2.5px;
+    line-height: 34px;
+    color: var(--strong-color, var(--primary-color));
+    text-shadow: none;
+    backdrop-filter: blur(50px); /* FIXME: check on CHROME */
+    box-shadow: 0 0 5px rgba(0, 0, 0, .25);
+}
+
+*:not(.button) > strong::before {
+    content: "";
+    display: flex;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    height: 100%;
+    width: 100%;
+    background-color: var(--strong-bg-color, rgba(255, 255, 255, .1));
+    border: solid
+            var(--strong-border-size, 1px)
+            var(--strong-border-color, rgba(255, 255, 255, .5));
+    z-index: -1;
+}
+
+/* BUTTONS */
+
+.button {
+    display: inline-block;
+    padding: 6px 14px;
+    font-size: 12px;
+    text-transform: uppercase;
+    box-shadow: 3px 4px 0 rgba(0, 0, 0, .25);
+    color: var(--secondary-color);
+    background-color: var(--tertiary-color);
+    border: solid 2px var(--secondary-color);
+    transition: all 150ms ease-in-out;
+    font-weight: 800;
+}
+
+.button strong {
+    font-weight: 800;
+    color: var(--primary-color);
+}
+
+.button.primary {
+    color: var(--tertiary-color);
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.button.primary strong {
+    color: var(--secondary-color);
+}
+
+.button.primary:hover strong,
+.button.primary:focus strong {
+    color: var(--primary-color);
+}
+
+.button:hover, .button.primary:hover,
+.button:focus, .button.primary:focus {
+    color: var(--tertiary-color);
+    background-color: var(--secondary-color);
+    transform: scale(1.1);
+    box-shadow: 3px 4px 50px rgba(0, 0, 0, 1);
+    border-color: var(--secondary-color);
+    text-shadow: 2px 2px 15px white;
+}
+
+.button:hover strong, .button:focus strong {
+    color: var(--primary-color);
+}
+
+.button.big {
+    padding: 10px 50px;
+    font-size: 14px;
+}
+
+/* SCROLLBARS */
+
+:root {
+    --sb-track-color: transparent;
+    --sb-thumb-color: #fd195a;
+    --sb-size: 4px;
+}
+
+.scrollbar::-webkit-scrollbar {
+    width: var(--sb-size);
+    height: var(--sb-size);
+}
+
+.scrollbar::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+
+}
+
+@supports not selector(::-webkit-scrollbar) {
+    .scrollbar {
+        scrollbar-color: var(--sb-thumb-color)
+                         var(--sb-track-color);
+        scrollbar-width: auto;
+    }
+}

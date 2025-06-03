@@ -1,0 +1,72 @@
+/* Panels. */
+.splitview {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.panel {
+    position: absolute;
+    width: 100vw;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.panel .split-content {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /* padding-top: 5em; */
+}
+
+.day {
+    z-index: 1;
+}
+
+.night {
+    z-index: 2;
+    width: 50vw;
+}
+
+.day .split-content .description {
+    top: 20%;
+}
+
+.night .split-content .description {
+    bottom: 0;
+}
+
+/* Handle. */
+.handle {
+    height: 100%;
+    position: absolute;
+    display: block;
+    background-color: rgb(253, 171, 0);
+    width: 5px;
+    top: 0;
+    left: 50%;
+    z-index: 3;
+}
+
+.handle::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translate(calc(-50% + 2.5px))
+               rotate(45deg);
+    width: 20px;
+    height: 20px;
+    background-color: rgb(253, 171, 0);
+}
+
+.split-content .description {
+    position: absolute;
+    width: 100vw;
+    text-align: center;
+}

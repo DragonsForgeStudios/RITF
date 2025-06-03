@@ -1,0 +1,9 @@
+@media (width >= 1280px) {
+    header {
+        height: 70vh;
+    }
+
+    .title {
+        font-size: 92px;
+    }
+}
