@@ -418,9 +418,14 @@ header .button-try-now {
 
 .socials ul {
     display: flex;
+    flex-wrap: wrap;
     gap: 4px;
     margin: 0 auto;
     width: fit-content;
+}
+
+.socials ul li {
+    margin-top: 4px;
 }
 
 .socials ul a {
