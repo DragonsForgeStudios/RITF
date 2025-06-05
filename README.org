@@ -1,4 +1,7 @@
 #+TITLE: Roses in The Flames
 
+This repository contains the website code with its assets, made to be deployed over GitHub Pages.
+Its code and assets belong to DragonsForgeStudios.com.
+
 * Authors
-- Lucas Pruvost <[[mailto:lucas.pruvost@pm.me?subject=RITF website (dragonsforgestudios) -][lucas.pruvost@pm.me]]>
+- Lucas Pruvost <[[mailto:lucas.pruvost@pm.me?subject=RITF website (dragonsforgestudios) -][lucas.pruvost@pm.me]]> : original author (2025)
