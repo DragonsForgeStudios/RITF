@@ -4,4 +4,4 @@ This repository contains the website code with its assets, made to be deployed o
 Its code and assets belong to DragonsForgeStudios.com.
 
 * Authors
-- Lucas Pruvost <[[mailto:lucas.pruvost@pm.me?subject=RITF website (dragonsforgestudios) -][lucas.pruvost@pm.me]]> : original author (2025)
+- [[https://github.com/intoxx][Lucas Pruvost]] <[[mailto:lucas.pruvost@pm.me?subject=RITF website (dragonsforgestudios) -][lucas.pruvost@pm.me]]> : orignal author
